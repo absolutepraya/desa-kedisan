@@ -1,4 +1,5 @@
 import ProfilDesa from './components/ProfilDesa';
+import Galeri from './components/Gallery';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 const App = () => {
@@ -21,6 +22,10 @@ const App = () => {
 				<Route
 					path='/profil-desa'
 					element={<ProfilDesa />}
+				/>
+				<Route
+					path='/galeri'
+					element={<Galeri />}
 				/>
 			</Routes>
 		</Router>

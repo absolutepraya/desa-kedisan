@@ -6,7 +6,6 @@ import strukturPerbekel from '../data/strukturPerbekel.json';
 import strukturSekretariat from '../data/strukturSekretariat.json';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 
 const ProfilDesa = () => {
 	return (
@@ -112,10 +111,7 @@ const ProfilDesa = () => {
 					spaceBetween={20}
 					centeredSlides={true}
 					centeredSlidesBounds={true}
-					navigation={{
-						nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev',
-					}}
+					navigation
 				>
 					{Object.entries(strukturPerbekel.Kelian_Banjar_Dinas).map(([key, value]) => (
 						<SwiperSlide key={key}>
@@ -130,12 +126,6 @@ const ProfilDesa = () => {
 							</div>
 						</SwiperSlide>
 					))}
-					<div className='swiper-button-next flex items-center justify-center'>
-						<IconArrowRight size={32} />
-					</div>
-					<div className='swiper-button-prev flex items-center justify-center'>
-						<IconArrowLeft size={32} />
-					</div>
 				</Swiper>
 
 				<div className='!mt-12 flex h-64 w-48 flex-col items-center space-y-3 overflow-hidden rounded-xl bg-white pt-3'>
