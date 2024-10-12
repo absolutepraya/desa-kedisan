@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Import semua font yang dibutuhkan */
+@font-face {
+	font-family: 'Inter';
+	src: url('/src/assets/fonts/Inter/Inter-VariableFont.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 100 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Inter';
+	src: url('/src/assets/fonts/Inter/Inter-Italic-VariableFont.ttf') format('truetype');
+	font-display: swap;
+	font-weight: 100 900;
+	font-style: italic;
+}
+
+html,
+body {
+	overscroll-behavior: none; /* Mematikan efek overscroll agar tidak ada space putih di sisi website */
+	scroll-behavior: smooth; /* Efek smooth scroll */
+}
