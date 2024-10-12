@@ -1,12 +1,29 @@
-import NavBar from './components/NavBar';
 import ProfilDesa from './components/ProfilDesa';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 const App = () => {
 	return (
-		<div className={'relative flex flex-col space-y-12 overflow-hidden font-inter min-h-screen w-full bg-gray-200 pt-20'}>
-			<NavBar />
-			<ProfilDesa />
-		</div>
+		<Router>
+			<Routes>
+				<Route
+					path='/*'
+					element={
+						<Navigate
+							to='/'
+							replace
+						/>
+					}
+				/>
+				<Route
+					path='/'
+					element={<ProfilDesa />}
+				/>
+				<Route
+					path='/profil-desa'
+					element={<ProfilDesa />}
+				/>
+			</Routes>
+		</Router>
 	);
 };
 

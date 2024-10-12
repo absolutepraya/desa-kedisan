@@ -1,0 +1,29 @@
+{
+	"Sekretariat_Desa_Kedisan": "I Nyoman Semirayasa",
+	"Dinas_Sekretariat": {
+		"Kaur_Perencanaan": {
+			"Kepala": "I Made Narayana Putra",
+			"Staff": "I Wayan Supartika"
+		},
+		"Kasi_Umum_dan_TU": {
+			"Kepala": "Ni Nyoman Septiari",
+			"Staff": "Ni Wayan Dewi Windu Sari"
+		},
+		"Kasi_Keuangan": {
+			"Kepala": "I Gede Ferry Perdana Putra",
+			"Staff": "Ni Luh Rina Dewi"
+		},
+		"Kasi_Pemerintahan": {
+			"Kepala": "I Gusti Ngurah Sutawijaya",
+			"Staff": "Ni Kadek Ratna Dewi"
+		},
+		"Kasi_Kesejahteraan": {
+			"Kepala": "I Nyoman Arta",
+			"Staff": "Ni Wayan Ulandari"
+		},
+		"Kasi_Pelayanan": {
+			"Kepala": "Ni Wayan Arniti",
+			"Staff": "Ni Kadek Bela Astini"
+		}
+	}
+}

@@ -2,7 +2,7 @@ import Logo from '../assets/logo/logo.svg';
 
 const NavBar = () => {
 	return (
-		<nav className='fixed top-0 flex h-20 w-full flex-row items-center justify-between bg-white px-16 shadow-xl z-50'>
+		<nav className='fixed top-0 flex h-20 w-full flex-row items-center justify-between bg-white px-16 shadow-xl z-50 font-inter'>
 			<div className='flex flex-row space-x-1'>
 				<img
 					src={Logo}

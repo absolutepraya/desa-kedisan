@@ -11,7 +11,7 @@ export default {
 			// Variabel custom warna
 			colors: {
 				custred: '#df4a3c',
-				custorange: '#ef6c43'
+				custorange: '#f9a15d'
 			},
 		},
 	},
