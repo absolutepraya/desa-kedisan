@@ -1,14 +1,14 @@
 import NavBar from './NavBar';
 import Footer from './Footer';
-import BanjarDinasKebon from '../assets/images/BanjarDinasKebon.webp';
+import BanjarDinasKebon from '/assets/images/BanjarDinasKebon.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Navigation } from 'swiper/modules';
 import strukturPerbekel from '../data/strukturPerbekel.json';
 import strukturSekretariat from '../data/strukturSekretariat.json';
-import Leaf from '../assets/elements/Leaf.webp';
-import Greek from '../assets/elements/Greek.webp';
-import Scroll from '../assets/elements/Scroll.webp';
+import Leaf from '/assets/elements/Leaf.webp';
+import Greek from '/assets/elements/Greek.webp';
+import Scroll from '/assets/elements/Scroll.webp';
 import { IconUserFilled } from '@tabler/icons-react';
 
 const ProfilDesa = () => {

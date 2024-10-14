@@ -2,7 +2,7 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 import sekolah from '../data/sekolah.json';
 
-import SDBali from '../assets/images/SDBali.webp';
+import SDBali from '/assets/images/SDBali.webp';
 
 const Sekolah = () => {
 	return (

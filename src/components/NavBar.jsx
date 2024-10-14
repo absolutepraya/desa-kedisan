@@ -1,4 +1,4 @@
-import Logo from '../assets/logo/logo.svg';
+import Logo from '/assets/logo/logo.svg';
 import { useState, useEffect } from 'react';
 
 const NavBar = ({ activePage }) => {
