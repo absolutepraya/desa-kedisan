@@ -7,7 +7,7 @@ import SDBali from '../assets/images/SDBali.webp';
 const Sekolah = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
-			<NavBar />
+			<NavBar activePage='Sekolah' />
 			<div className='flex w-[80%] flex-row items-center space-x-6'>
 				<p className='text-5xl font-extrabold'>Sekolah di Desa Kedisan</p>
 				<div className='h-2 w-auto flex-grow bg-gradient-to-r from-custred to-custorange' />
@@ -41,6 +41,9 @@ const Sekolah = () => {
 					</div>
 				</div>
 			</div>
+
+			{/* Agar footer selalu berada di bawah */}
+			<div className='flex flex-grow' />
 
 			<Footer />
 		</section>

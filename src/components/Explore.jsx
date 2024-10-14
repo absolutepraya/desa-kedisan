@@ -13,7 +13,7 @@ import { Navigation } from 'swiper/modules';
 const Explore = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
-			<NavBar />
+			<NavBar activePage='Explore' />
 			<div className='flex w-[80%] flex-col space-y-2'>
 				<div className='flex w-full flex-row items-center space-x-6'>
 					<p className='text-5xl font-extrabold'>Temukan Harta Karun di Desa Kedisan</p>
@@ -138,6 +138,9 @@ const Explore = () => {
 					</div>
 				))}
 			</div>
+
+			{/* Agar footer selalu berada di bawah */}
+			<div className='flex flex-grow' />
 
 			<Footer />
 		</section>

@@ -36,7 +36,7 @@ const images = [
 const Galeri = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
-			<NavBar />
+			<NavBar activePage='Galeri' />
 			<div className='flex w-[80%] flex-row items-center space-x-6'>
 				<p className='text-5xl font-extrabold'>Galeri Desa Kedisan</p>
 				<div className='h-2 w-auto flex-grow bg-gradient-to-r from-custred to-custorange' />
@@ -53,12 +53,15 @@ const Galeri = () => {
 							alt={`Galeri ${image.name}`}
 							className='h-96 w-full rounded-lg object-cover'
 						/>
-						<div className='rounded-b-lg bg-custred py-2 px-4'>
+						<div className='rounded-b-lg bg-custred px-4 py-2'>
 							<p className='text-lg font-bold text-white'>{image.name}</p>
 						</div>
 					</div>
 				))}
 			</div>
+
+			{/* Agar footer selalu berada di bawah */}
+			<div className='flex flex-grow' />
 
 			<Footer />
 		</section>

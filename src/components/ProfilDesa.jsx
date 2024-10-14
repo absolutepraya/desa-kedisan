@@ -13,7 +13,7 @@ import Scroll from '../assets/elements/Scroll.png';
 const ProfilDesa = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
-			<NavBar />
+			<NavBar activePage={'Profil Desa'} />
 			{/* Kotak judul dan subjudul */}
 			<div
 				className='relative flex min-h-48 w-[90%] flex-col justify-center space-y-1 overflow-hidden rounded-xl border px-8 py-12 text-start text-white'
@@ -48,7 +48,7 @@ const ProfilDesa = () => {
 				</div>
 				<div className='flex flex-grow overflow-hidden rounded-xl shadow-xl'>
 					<iframe
-						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.013374268736!2d115.3688433147849!3d-8.28370399404164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1e4b3b3b3b3b3%3A0x3b3b3b3b3b3b3b3b!2sDesa%20Kedisan!5e0!3m2!1sen!2sid!4v1612345678901!5m2!1sen!2sid'
+						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15792.69396604829!2d115.36344219824558!3d-8.285526134139438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1f5d7449f114b%3A0x8e5f99b9dae1de9c!2sKedisan%2C%20Kintamani%2C%20Bangli%20Regency%2C%20Bali!5e0!3m2!1sen!2sid!4v1728914166297!5m2!1sen!2sid'
 						width='100%'
 						height='100%'
 						style={{ border: 0 }}
@@ -64,7 +64,7 @@ const ProfilDesa = () => {
 			</div>
 
 			<div
-				className='relative pb-16 min-h-24 w-[80%] space-y-3 rounded-xl bg-white px-6 py-6 text-justify shadow-xl'
+				className='relative min-h-24 w-[80%] space-y-3 rounded-xl bg-white px-6 py-6 pb-16 text-justify shadow-xl'
 				style={{ textIndent: '2rem' }}
 			>
 				<img
@@ -75,7 +75,7 @@ const ProfilDesa = () => {
 				<img
 					src={Scroll}
 					alt='Scroll'
-					className='absolute -left-4 -bottom-4 h-16 rotate-6'
+					className='absolute -bottom-4 -left-4 h-16 rotate-6'
 				/>
 				<p
 					className='text-center text-2xl font-bold'
@@ -185,6 +185,10 @@ const ProfilDesa = () => {
 					))}
 				</div>
 			</div>
+
+			{/* Agar footer selalu berada di bawah */}
+			<div className='flex flex-grow' />
+
 			<Footer />
 		</section>
 	);
