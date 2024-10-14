@@ -48,12 +48,6 @@ const NavBar = () => {
 				</a>
 				<a
 					className='transform-all rounded-md px-2 py-1 duration-100 hover:bg-custred hover:text-white hover:shadow-lg'
-					href='/pengaduan'
-				>
-					Pengaduan
-				</a>
-				<a
-					className='transform-all rounded-md px-2 py-1 duration-100 hover:bg-custred hover:text-white hover:shadow-lg'
 					href='/galeri'
 				>
 					Galeri

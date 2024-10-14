@@ -46,14 +46,16 @@ const Galeri = () => {
 				{images.map((image, index) => (
 					<div
 						key={index}
-						className='flex flex-col items-center space-y-3'
+						className='flex flex-col items-center transition-all duration-200 hover:rotate-1'
 					>
 						<img
 							src={image.src}
 							alt={`Galeri ${image.name}`}
 							className='h-96 w-full rounded-lg object-cover'
 						/>
-						<p className='text-lg font-bold'>{image.name}</p>
+						<div className='rounded-b-lg bg-custred py-2 px-4'>
+							<p className='text-lg font-bold text-white'>{image.name}</p>
+						</div>
 					</div>
 				))}
 			</div>
