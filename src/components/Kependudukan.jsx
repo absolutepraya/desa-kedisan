@@ -1,10 +1,10 @@
 import NavBar from './NavBar';
 import Footer from './Footer';
 
-import Kependudukan1 from '../assets/charts/Kependudukan1.webp';
-import Kependudukan2 from '../assets/charts/Kependudukan2.webp';
-import Kependudukan3 from '../assets/charts/Kependudukan3.webp';
-import Kependudukan4 from '../assets/charts/Kependudukan4.webp';
+import Kependudukan1 from '../assets/charts/kependudukan1.webp';
+import Kependudukan2 from '../assets/charts/kependudukan2.webp';
+import Kependudukan3 from '../assets/charts/kependudukan3.webp';
+import Kependudukan4 from '../assets/charts/kependudukan4.webp';
 
 import { IconUser, IconUsers, IconBabyCarriage, IconOld, IconFriends } from '@tabler/icons-react';
 
