@@ -9,6 +9,7 @@ import penginapan from '../data/penginapan.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Navigation } from 'swiper/modules';
+import { IconArrowBigRightLine, IconArrowBigLeftLine } from '@tabler/icons-react';
 
 const Explore = () => {
 	return (
@@ -40,11 +41,15 @@ const Explore = () => {
 				/>
 				<Swiper
 					modules={[Navigation]}
-					className='w-full'
+					className='relative w-full'
 					slidesPerView={1}
 					centeredSlides={true}
 					centeredSlidesBounds={true}
-					navigation
+					loop={true}
+					navigation={{
+						nextEl: '.swiper-next',
+						prevEl: '.swiper-prev',
+					}}
 				>
 					{destinasiWisata.map((destination, index) => (
 						<SwiperSlide key={index}>
@@ -64,6 +69,12 @@ const Explore = () => {
 							</div>
 						</SwiperSlide>
 					))}
+					<div className='swiper-prev absolute bottom-1/2 left-0 z-10 flex h-24 w-16 translate-y-1/2 items-center justify-center rounded bg-custred text-white'>
+						<IconArrowBigLeftLine size={30} />
+					</div>
+					<div className='swiper-next absolute bottom-1/2 right-0 z-10 flex h-24 w-16 translate-y-1/2 items-center justify-center rounded bg-custred text-white'>
+						<IconArrowBigRightLine size={30} />
+					</div>
 				</Swiper>
 			</div>
 

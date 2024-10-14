@@ -9,7 +9,7 @@ import strukturSekretariat from '../data/strukturSekretariat.json';
 import Leaf from '/assets/elements/Leaf.webp';
 import Greek from '/assets/elements/Greek.webp';
 import Scroll from '/assets/elements/Scroll.webp';
-import { IconUserFilled } from '@tabler/icons-react';
+import { IconUserFilled, IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 
 const ProfilDesa = () => {
 	return (
@@ -131,12 +131,15 @@ const ProfilDesa = () => {
 
 				<Swiper
 					modules={[Navigation]}
-					className='w-full'
+					className='relative w-full'
 					slidesPerView={5}
 					spaceBetween={20}
 					centeredSlides={true}
 					centeredSlidesBounds={true}
-					navigation
+					navigation={{
+						nextEl: '.swiper-next',
+						prevEl: '.swiper-prev',
+					}}
 				>
 					{Object.entries(strukturPerbekel.Kelian_Banjar_Dinas).map(([key, value]) => (
 						<SwiperSlide key={key}>
@@ -151,6 +154,12 @@ const ProfilDesa = () => {
 							</div>
 						</SwiperSlide>
 					))}
+					<div className='swiper-prev absolute bottom-1/2 left-0 z-10 flex h-10 w-10 translate-y-1/2 items-center justify-center rounded bg-custred text-white'>
+						<IconArrowLeft />
+					</div>
+					<div className='swiper-next absolute bottom-1/2 right-0 z-10 flex h-10 w-10 translate-y-1/2 items-center justify-center rounded bg-custred text-white'>
+						<IconArrowRight />
+					</div>
 				</Swiper>
 
 				<div className='!mt-12 flex h-64 w-48 flex-col items-center space-y-3 overflow-hidden rounded-xl bg-white pt-3'>
@@ -196,7 +205,7 @@ const ProfilDesa = () => {
 };
 
 const PersonIcon = () => (
-	<div className='aspect-square w-[85%] rounded-full bg-gray-400 overflow-hidden flex items-center justify-center'>
+	<div className='flex aspect-square w-[85%] items-center justify-center overflow-hidden rounded-full bg-gray-400'>
 		<IconUserFilled
 			size={120}
 			className='text-gray-200'
