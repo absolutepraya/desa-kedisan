@@ -6,9 +6,9 @@ import 'swiper/swiper-bundle.css';
 import { Navigation } from 'swiper/modules';
 import strukturPerbekel from '../data/strukturPerbekel.json';
 import strukturSekretariat from '../data/strukturSekretariat.json';
-import Leaf from '../assets/elements/Leaf.png';
-import Greek from '../assets/elements/Greek.png';
-import Scroll from '../assets/elements/Scroll.png';
+import Leaf from '../assets/elements/Leaf.webp';
+import Greek from '../assets/elements/Greek.webp';
+import Scroll from '../assets/elements/Scroll.webp';
 
 const ProfilDesa = () => {
 	return (

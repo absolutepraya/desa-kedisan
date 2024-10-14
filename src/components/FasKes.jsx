@@ -1,6 +1,6 @@
 import NavBar from './NavBar';
 import Footer from './Footer';
-import AskaraMedika from '../assets/images/AskaraMedika.png';
+import AskaraMedika from '../assets/images/AskaraMedika.webp';
 
 import { IconMap2, IconPhone, IconMail } from '@tabler/icons-react';
 

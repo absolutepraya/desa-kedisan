@@ -2,21 +2,21 @@
 	{
 		"name": "Arta Derau",
 		"description": "Merupakan ruang kreatif yang didirikan oleh seniman ternama Sekarputi dan Agung.",
-		"image": "/src/assets/images/ArtaDerau.png"
+		"image": "/src/assets/images/ArtaDerau.webp"
 	},
 	{
 		"name": "Ganesha Art",
 		"description": "Merupakan galeri seni yang dikenal sebagai pusat kerajinan ukiran kayu di Bali.",
-		"image": "/src/assets/images/GaneshaArt.jpg"
+		"image": "/src/assets/images/GaneshaArt.webp"
 	},
 	{
 		"name": "Akah Bali Gamal",
 		"description": "Merupakan toko kerajinan tangan yang menawarkan produk unik dari bahan alami seperti kayu Gamal.",
-		"image": "/src/assets/images/AkahBaliGamal.jpg"
+		"image": "/src/assets/images/AkahBaliGamal.webp"
 	},
 	{
 		"name": "Sugita Garuda",
 		"description": "Merupakan pusat seni ukir kayu yang terkenal akan patung Garudanya.",
-		"image": "/src/assets/images/SugitaGaruda.jpg"
+		"image": "/src/assets/images/SugitaGaruda.webp"
 	}
 ]
