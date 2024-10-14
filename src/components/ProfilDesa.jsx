@@ -1,15 +1,18 @@
+import NavBar from './NavBar';
+import Footer from './Footer';
 import BanjarDinasKebon from '../assets/images/BanjarDinasKebon.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Navigation } from 'swiper/modules';
 import strukturPerbekel from '../data/strukturPerbekel.json';
 import strukturSekretariat from '../data/strukturSekretariat.json';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import Leaf from '../assets/elements/Leaf.png';
+import Greek from '../assets/elements/Greek.png';
+import Scroll from '../assets/elements/Scroll.png';
 
 const ProfilDesa = () => {
 	return (
-		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-200 pt-20 font-inter'>
+		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
 			<NavBar />
 			{/* Kotak judul dan subjudul */}
 			<div
@@ -33,9 +36,14 @@ const ProfilDesa = () => {
 				<div className='h-1 w-[80%] bg-custred' />
 			</div>
 
-			<div className='flex max-w-[80%] flex-row space-x-4 rounded-xl border'>
-				<div className='flex max-w-[50%] flex-col space-y-4 rounded-xl border bg-white px-6 py-6 shadow-xl'>
-					<p className='text-center text-2xl font-bold'>📌 Desa Kedisan</p>
+			<div className='flex max-w-[80%] flex-row space-x-4 rounded-xl'>
+				<div className='relative flex max-w-[50%] flex-col space-y-4 rounded-xl border bg-white px-6 py-6 shadow-xl'>
+					<img
+						src={Leaf}
+						alt='Leaf'
+						className='absolute -left-4 -top-4 h-20 w-20'
+					/>
+					<p className='text-center text-2xl font-bold'>Desa Kedisan</p>
 					<p className='text-justify'>Desa Kedisan adalah tujuan wisata menawan yang terkenal dengan sawah bertingkatnya yang menakjubkan, warisan budaya yang kaya, dan masyarakatnya yang ramah. Di sini, Anda dapat menikmati keindahan alam yang tenang, menjelajahi pasar tradisional, dan menikmati kesenian dan kerajinan lokal yang unik. Keramahan penduduk desa yang hangat akan membuat kunjungan Anda menjadi pengalaman yang tak terlupakan. Perpaduan antara pemandangan yang indah dan kekayaan budaya menjadikan Desa Kedisan sebagai destinasi yang unik dan menarik.</p>
 				</div>
 				<div className='flex flex-grow overflow-hidden rounded-xl shadow-xl'>
@@ -56,9 +64,25 @@ const ProfilDesa = () => {
 			</div>
 
 			<div
-				className='min-h-24 w-[80%] space-y-3 rounded-xl bg-white px-6 py-6 text-justify shadow-xl'
+				className='relative pb-16 min-h-24 w-[80%] space-y-3 rounded-xl bg-white px-6 py-6 text-justify shadow-xl'
 				style={{ textIndent: '2rem' }}
 			>
+				<img
+					src={Greek}
+					alt='Greek'
+					className='absolute -right-4 -top-4 h-16 w-16 -rotate-12'
+				/>
+				<img
+					src={Scroll}
+					alt='Scroll'
+					className='absolute -left-4 -bottom-4 h-16 rotate-6'
+				/>
+				<p
+					className='text-center text-2xl font-bold'
+					style={{ textIndent: '0' }}
+				>
+					Sejarah Desa Kedisan
+				</p>
 				<p>Nama Desa Kedisan memiliki nilai historis yang cukup signifikan, meskipun rinciannya masih belum bisa dipastikan karena ketiadaan naskah kuno. Menurut legenda setempat dan lontar “Arya Wang Bang Sidemen” dari koleksi K. Sudarsana, asal-usul desa ini berawal dari I Gusti Kacang Dawa (Ida Penataran) yang menikah dengan Ni Gusti Ayu Bringkit, keturunan dari Sri Nararya Kepakisan. Mereka memiliki dua orang putra, I Gusti Ngurah Dimade dan I Gusti Ngurah Bija.</p>
 				<p>Pada tahun 1523 Masehi, karena adanya konflik di Kerajaan Gelgel, I Gusti Kacang Pawos meninggalkan wilayah kekuasaannya dan tiba di Desa Aan Klungkung, di mana ia disambut oleh Ki Pasek Katrangan. Setelah tinggal di sana selama lima tahun, ia memutuskan untuk pergi dan ditemani oleh Ki Pasek Katrangan untuk mencari tempat yang lebih aman untuk bermukim. Mereka akhirnya tiba di sebuah kawasan hutan lebat yang kaya akan burung dan menamainya Kedisan, yang diambil dari kata “Kedis” (burung dalam bahasa Bali).</p>
 				<p>Secara resmi didirikan pada tahun 1541 Masehi, Desa Kedisan menjadi pusat pemerintahan yang terdiri dari 7 banjar: Tangkup, Kebon, Pakudui, Bayad, Kedisan Kaja, Kedisan Kelod, dan Cebok. Penduduk Kedisan bukanlah orang Bali Mula/Bali Aga, melainkan pendatang dari Gelgel-Semarapura, yang menandai akar sejarah desa ini yang unik.</p>

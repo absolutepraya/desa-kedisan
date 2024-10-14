@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Air Terjun Ulu Penatu",
+		"description": "Air Terjun Ulu Petanu mewakili keindahan tersembunyi di Bali yang kini telah menjadi pusat pariwisata regeneratif, sebuah pendekatan pariwisata yang menekankan pada pemulihan dan pelestarian lingkungan.",
+        "image": "/src/assets/images/AirTerjunUlu.webp"
+	},
+	{
+		"name": "Paras Petanu Ground Village",
+		"description": "merupakan destinasi wisata alam yang menawarkan pengalaman berkemah yang menakjubkan di tengah-tengah keindahan Bali",
+        "image": "src/assets/images/ParasPetanuGroundVillage2.webp"
+	},
+	{
+		"name": "Teras Sawah Desa Abian",
+		"description": "Destinasi wisata alam yang menampilkan keindahan sawah terasering Bali yang ikonik, menawarkan pengalaman perjalanan yang otentik dan mendalam",
+        "image": "src/assets/images/TerasAbian.webp"
+	},
+	{
+		"name": "Teras Sawah Tegallang",
+		"description": "Teras Sawah Tegallang adalah destinasi wisata alam yang menampilkan keindahan sawah bertingkat yang ikonik di Bali dan menawarkan pengalaman trekking yang menakjubkan.",
+        "image": "src/assets/images/TerasTegallang2.webp"
+	}
+]
