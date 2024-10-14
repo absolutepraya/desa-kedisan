@@ -2,21 +2,21 @@
 	{
 		"name": "Bobocabin",
 		"description": "Penginapan yang mudah dijangkau dan memiliki pemandangan indah, dapat memberikan pengalaman yang menarik dan menyenangkan.",
-		"image": "src/assets/images/BoboCabin.webp"
+		"image": "/assets/images/BoboCabin.webp"
 	},
 	{
 		"name": "Villa Rimba Ubud",
 		"description": "Penginapan villa yang terletak di lereng Bukit Indah, menyajikan pemandangan indah lembah.",
-		"image": "src/assets/images/VillaRimba.webp"
+		"image": "/assets/images/VillaRimba.webp"
 	},
 	{
 		"name": "Villa Kalisha",
 		"description": "Penginapan villa yang memberikan kesan modern dan tenang, menyajikan pemandangan sawah yang indah.",
-		"image": "src/assets/images/VillaKalisha.webp"
+		"image": "/assets/images/VillaKalisha.webp"
 	},
 	{
 		"name": "Villa Cempaka Ubud",
 		"description": "Penginapan villa yang menawarkan pemandangan Bali yang subur dan keindahan alam Bali lainnya.",
-		"image": "src/assets/images/VillaChempaka.webp"
+		"image": "/assets/images/VillaChempaka.webp"
 	}
 ]

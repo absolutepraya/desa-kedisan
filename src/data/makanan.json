@@ -2,21 +2,21 @@
 	{
 		"name": "Tegal Wangi Luwak Coffee",
 		"description": "Merupakan kedai kopi tradisional yang memiliki 12 jenis variasi kopi dan teh.",
-		"image": "/src/assets/images/TegalWangi.webp"
+		"image": "/assets/images/TegalWangi.webp"
 	},
 	{
 		"name": "Sari Timbul Restaurant",
 		"description": "Merupakan restoran lokal yang menghidangkan makanan tradisional Bali serta menyajikan pemandangan yang indah dan tenang.",
-		"image": "/src/assets/images/SariTimbul.webp"
+		"image": "/assets/images/SariTimbul.webp"
 	},
 	{
 		"name": "Warung D’Uma Sari",
 		"description": "Merupakan tempat makan lokal sederhana yang menghidangkan berbagai makanan tradisional Bali.",
-		"image": "/src/assets/images/WarungDUma.webp"
+		"image": "/assets/images/WarungDUma.webp"
 	},
 	{
 		"name": "Tania Oky",
 		"description": "Merupakan tempat makan lokal yang fokus dalam menghidangkan makanan bubur yang lezat dan sehat.",
-		"image": "/src/assets/images/TaniaOky.webp"
+		"image": "/assets/images/TaniaOky.webp"
 	}
 ]
