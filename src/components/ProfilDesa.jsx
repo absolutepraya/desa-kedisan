@@ -9,6 +9,7 @@ import strukturSekretariat from '../data/strukturSekretariat.json';
 import Leaf from '../assets/elements/Leaf.webp';
 import Greek from '../assets/elements/Greek.webp';
 import Scroll from '../assets/elements/Scroll.webp';
+import { IconUserFilled } from '@tabler/icons-react';
 
 const ProfilDesa = () => {
 	return (
@@ -121,7 +122,7 @@ const ProfilDesa = () => {
 
 			<div className='flex w-[80%] flex-col items-center space-y-5'>
 				<div className='flex h-64 w-48 flex-col items-center space-y-3 overflow-hidden rounded-xl bg-white pt-3'>
-					<div className='aspect-square w-[85%] rounded-full bg-gray-400' />
+					<PersonIcon />
 					<div className='flex w-full flex-grow flex-col items-center justify-center space-y-0 bg-custred px-1 text-white'>
 						<p className='text-center text-sm font-bold'>{strukturPerbekel.Perbekel_Desa_Kedisan}</p>
 						<p className='text-center text-xs'>Perbekel Desa Kedisan</p>
@@ -141,7 +142,7 @@ const ProfilDesa = () => {
 						<SwiperSlide key={key}>
 							<div className='flex w-auto items-center justify-center'>
 								<div className='flex h-64 w-48 flex-col items-center space-y-3 overflow-hidden rounded-xl bg-white pt-3'>
-									<div className='aspect-square w-[85%] rounded-full bg-gray-400' />
+									<PersonIcon />
 									<div className='flex w-full flex-grow flex-col items-center justify-center space-y-0 bg-custred px-2 text-white'>
 										<p className='text-center text-sm font-bold'>{value}</p>
 										<p className='text-center text-xs'>{key.replace(/_/g, ' ')}</p>
@@ -153,7 +154,7 @@ const ProfilDesa = () => {
 				</Swiper>
 
 				<div className='!mt-12 flex h-64 w-48 flex-col items-center space-y-3 overflow-hidden rounded-xl bg-white pt-3'>
-					<div className='aspect-square w-[85%] rounded-full bg-gray-400' />
+					<PersonIcon />
 					<div className='flex w-full flex-grow flex-col items-center justify-center space-y-0 bg-custred px-1 text-white'>
 						<p className='text-center text-sm font-bold'>{strukturSekretariat.Sekretariat_Desa_Kedisan}</p>
 						<p className='text-center text-xs'>Sekretariat Desa Kedisan</p>
@@ -167,14 +168,14 @@ const ProfilDesa = () => {
 							className='flex h-80 w-[28rem] flex-row items-center justify-center space-x-4 rounded-xl border bg-white'
 						>
 							<div className='flex h-64 w-48 flex-col items-center space-y-3 pt-3'>
-								<div className='aspect-square w-[85%] rounded-full bg-gray-400' />
+								<PersonIcon />
 								<div className='flex w-full flex-grow flex-col items-center justify-center space-y-0 rounded-xl bg-custred px-2 text-white'>
 									<p className='text-center text-sm font-bold'>{value.Kepala}</p>
 									<p className='text-center text-xs'>Kepala</p>
 								</div>
 							</div>
 							<div className='flex h-64 w-48 flex-col items-center space-y-3 pt-3'>
-								<div className='aspect-square w-[85%] rounded-full bg-gray-400' />
+								<PersonIcon />
 
 								<div className='flex w-full flex-grow flex-col items-center justify-center space-y-0 rounded-xl bg-custred px-2 text-white'>
 									<p className='text-center text-sm font-bold'>{value.Staff}</p>
@@ -193,5 +194,14 @@ const ProfilDesa = () => {
 		</section>
 	);
 };
+
+const PersonIcon = () => (
+	<div className='aspect-square w-[85%] rounded-full bg-gray-400 overflow-hidden flex items-center justify-center'>
+		<IconUserFilled
+			size={120}
+			className='text-gray-200'
+		/>
+	</div>
+);
 
 export default ProfilDesa;
