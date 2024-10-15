@@ -26,7 +26,7 @@ const Kependudukan = () => {
 			</a>
 
 			<div className='flex w-[80%] flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0'>
-				<p className='md:text-5xl text-4xl font-extrabold'>Statistika Kependudukan</p>
+				<p className='text-4xl font-extrabold md:text-5xl'>Statistika Kependudukan</p>
 				<div className='h-2 w-full bg-gradient-to-r from-custred to-custorange md:w-auto md:flex-grow' />
 			</div>
 
@@ -136,7 +136,7 @@ const Kependudukan = () => {
 
 			<div className='flex w-[80%] flex-col space-y-10 md:flex-row md:space-x-6'>
 				<div className='flex flex-col items-center md:w-1/2'>
-					<div className='w-fit rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl'>
+					<div className='w-3/4 rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl md:w-fit'>
 						<p className='font-bold text-white md:text-xl'>PUS dan Kepesertaan Ber-KB</p>
 					</div>
 					<div className='flex w-full flex-col items-center space-y-8 overflow-hidden rounded-xl bg-white pt-8'>
@@ -160,7 +160,7 @@ const Kependudukan = () => {
 					</div>
 				</div>
 				<div className='flex flex-col items-center md:w-1/2'>
-					<div className='w-fit rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl'>
+					<div className='w-3/4 rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl md:w-fit'>
 						<p className='font-bold text-white md:text-xl'>PUS dan ketidaksertaan Ber-KB</p>
 					</div>
 					<div className='flex w-full flex-col items-center space-y-8 overflow-hidden rounded-xl bg-white pt-8'>
