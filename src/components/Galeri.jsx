@@ -1,6 +1,7 @@
+// Import komponen yang diperlukan
 import NavBar from './NavBar';
 import Footer from './Footer';
-
+// Import gambar-gambar galeri
 import AirTerjunUlu from '/assets/images/AirTerjunUlu.webp';
 import AirTerjunUlu2 from '/assets/images/AirTerjunUlu2.webp';
 import AirTerjunUlu3 from '/assets/images/AirTerjunUlu3.webp';
@@ -15,9 +16,10 @@ import ParasPetanuGroundVillage2 from '/assets/images/ParasPetanuGroundVillage2.
 import TerasAbian from '/assets/images/TerasAbian.webp';
 import TerasTegallang from '/assets/images/TerasTegallang.webp';
 import TerasTegallang2 from '/assets/images/TerasTegallang2.webp';
-
+// Import IconInfoSquareRounded dari Tabler Icons
 import { IconInfoSquareRounded } from '@tabler/icons-react';
 
+// Data gambar galeri, disimpan dalam array of objects agar bisa diiterasi
 const images = [
 	{ name: 'Air Terjun Ulu', src: AirTerjunUlu },
 	{ name: 'Air Terjun Ulu 2', src: AirTerjunUlu2 },
@@ -38,8 +40,10 @@ const images = [
 const Galeri = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
+			{/* NavBar, mengarahkan activePage ke 'Galeri' */}
 			<NavBar activePage='Galeri' />
 
+			{/* Tombol Pusat Bantuan */}
 			<a
 				className='fixed bottom-8 right-8 z-40 flex flex-row items-center justify-center space-x-2 rounded-full bg-custorange px-3 py-1 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-orange-500'
 				href='/pusat-bantuan'
@@ -52,12 +56,15 @@ const Galeri = () => {
 				<p className='font-semibold text-white'>Pusat Bantuan</p>
 			</a>
 
+			{/* Judul Galeri */}
 			<div className='flex w-[80%] flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0'>
 				<p className='text-4xl font-extrabold md:text-5xl'>Galeri Desa Kedisan</p>
 				<div className='h-2 w-full bg-gradient-to-r from-custred to-custorange md:w-auto md:flex-grow' />
 			</div>
 
+			{/* Grid Gambar Galeri */}
 			<div className='grid w-[80%] grid-cols-1 gap-4 md:grid-cols-2 md:gap-6'>
+				{/* Iterate data gambar galeri menggunakan map, untuk setiap gambar akan ditampilkan informasi berikut */}
 				{images.map((image, index) => (
 					<div
 						key={index}
@@ -78,6 +85,7 @@ const Galeri = () => {
 			{/* Agar footer selalu berada di bawah */}
 			<div className='flex flex-grow' />
 
+			{/* Footer */}
 			<Footer />
 		</section>
 	);

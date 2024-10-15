@@ -1,18 +1,21 @@
+// Import komponen yang diperlukan
 import NavBar from './NavBar';
 import Footer from './Footer';
-
+// Import gambar chart Kependudukan
 import Kependudukan1 from '/assets/charts/Kependudukan1.webp';
 import Kependudukan2 from '/assets/charts/Kependudukan2.webp';
 import Kependudukan3 from '/assets/charts/Kependudukan3.webp';
 import Kependudukan4 from '/assets/charts/Kependudukan4.webp';
-
+// Import icon dari Tabler Icons
 import { IconUser, IconUsers, IconBabyCarriage, IconOld, IconFriends, IconInfoSquareRounded } from '@tabler/icons-react';
 
 const Kependudukan = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
+			{/* NavBar, mengarahkan activePage ke 'Kependudukan' */}
 			<NavBar activePage='Kependudukan' />
 
+			{/* Tombol Pusat Bantuan */}
 			<a
 				className='fixed bottom-8 right-8 z-40 flex flex-row items-center justify-center space-x-2 rounded-full bg-custorange px-3 py-1 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-orange-500'
 				href='/pusat-bantuan'
@@ -25,11 +28,13 @@ const Kependudukan = () => {
 				<p className='font-semibold text-white'>Pusat Bantuan</p>
 			</a>
 
+			{/* Judul Kependudukan */}
 			<div className='flex w-[80%] flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0'>
 				<p className='text-4xl font-extrabold md:text-5xl'>Statistika Kependudukan</p>
 				<div className='h-2 w-full bg-gradient-to-r from-custred to-custorange md:w-auto md:flex-grow' />
 			</div>
 
+			{/* Statistika Kependudukan 1 */}
 			<div className='flex w-[80%] flex-col items-center'>
 				<div className='w-3/4 rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl md:w-fit'>
 					<p className='font-bold text-white md:text-xl'>Jumlah Penduduk Menurut Kelompok Umur</p>
@@ -75,6 +80,7 @@ const Kependudukan = () => {
 				</div>
 			</div>
 
+			{/* Statistika Kependudukan 2 */}
 			<div className='flex w-[80%] flex-col items-center'>
 				<div className='w-3/4 rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl md:w-fit'>
 					<p className='font-bold text-white md:text-xl'>Persentase Partisipasi Keluarga dalam Poktan (Kelompok Kegiatan)</p>
@@ -134,6 +140,7 @@ const Kependudukan = () => {
 				</div>
 			</div>
 
+			{/* Statistika Kependudukan 3 dan 4 */}
 			<div className='flex w-[80%] flex-col space-y-10 md:flex-row md:space-x-6'>
 				<div className='flex flex-col items-center md:w-1/2'>
 					<div className='w-3/4 rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl md:w-fit'>
@@ -188,6 +195,7 @@ const Kependudukan = () => {
 			{/* Agar footer selalu berada di bawah */}
 			<div className='flex flex-grow' />
 
+			{/* Footer */}
 			<Footer />
 		</section>
 	);

@@ -1,15 +1,20 @@
+// Import gambar
 import Logo from '/assets/logo/logo.svg';
+// Import useState dan useEffect dari React
 import { useState, useEffect } from 'react';
+// Import IconX dan IconMenu2 dari Tabler Icons
 import { IconX, IconMenu2 } from '@tabler/icons-react';
 
 const NavBar = ({ activePage }) => {
-	const [page, setPage] = useState(activePage);
-	const [menuOpen, setMenuOpen] = useState(false); // State to handle menu open/close
+	const [page, setPage] = useState(activePage); // State variable untuk handle active page
+	const [menuOpen, setMenuOpen] = useState(false); // State variable untuk handle menu open/close
 
+	// Set active page ketika activePage berubah
 	useEffect(() => {
 		setPage(activePage);
 	}, [activePage]);
 
+	// Fungsi untuk mendapatkan class link, jika page sama dengan linkPage maka gunakan class active, jika tidak gunakan class hover
 	const getLinkClass = (linkPage) => {
 		return `transform-all rounded-md px-2 text-nowrap py-1 duration-100 ${page === linkPage ? 'bg-custred text-white shadow-lg' : 'hover:bg-custred hover:text-white hover:shadow-lg'}`;
 	};
@@ -17,7 +22,7 @@ const NavBar = ({ activePage }) => {
 	return (
 		<nav className='fixed top-0 z-50 w-full bg-white shadow-xl'>
 			<div className='flex h-20 w-full flex-row items-center justify-between px-4 lg:px-16'>
-				{/* Logo */}
+				{/* Logo dan Nama Desa */}
 				<div className='flex flex-row space-x-1'>
 					<img
 						src={Logo}
@@ -30,12 +35,13 @@ const NavBar = ({ activePage }) => {
 					</div>
 				</div>
 
-				{/* Burger Icon for Mobile */}
+				{/* Burger Icon untuk Mobile View */}
 				<div className='lg:hidden'>
+					{/* Jika menuOpen true maka tampilkan icon X, jika tidak tampilkan icon Menu */}
 					<button onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? <IconX className='h-6 w-6' /> : <IconMenu2 className='h-6 w-6' />}</button>
 				</div>
 
-				{/* Links for Desktop View */}
+				{/* Links untuk Desktop View */}
 				<div className='hidden flex-row space-x-3 lg:flex'>
 					<a
 						className={getLinkClass('Profil Desa')}
@@ -76,7 +82,7 @@ const NavBar = ({ activePage }) => {
 				</div>
 			</div>
 
-			{/* Dropdown for Mobile View */}
+			{/* Dropdown untuk Mobile View */}
 			{menuOpen && (
 				<div className='flex flex-col space-y-2 bg-white px-4 py-2 lg:hidden'>
 					<a

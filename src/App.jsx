@@ -8,6 +8,10 @@ import PusatBantuan from './components/PusatBantuan';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 const App = () => {
+	{
+		/* Mengguakan router untuk navigasi antar halaman, setiap route diatur di dalam routes */
+	}
+
 	return (
 		<Router>
 			<Routes>

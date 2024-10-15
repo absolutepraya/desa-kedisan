@@ -1,14 +1,18 @@
+// Import komponen yang diperlukan
 import NavBar from './NavBar';
 import Footer from './Footer';
+// Import gambar logo Askara Medika
 import AskaraMedika from '/assets/images/AskaraMedika.webp';
-
+// Import Icon dari Tabler Icons
 import { IconMap2, IconPhone, IconMail, IconInfoSquareRounded } from '@tabler/icons-react';
 
 const FasKes = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
+			{/* NavBar, mengarahkan activePage ke 'Fasilitas Kesehatan' */}
 			<NavBar activePage='Fasilitas Kesehatan' />
 
+			{/* Tombol Pusat Bantuan */}
 			<a
 				className='fixed bottom-8 right-8 z-40 flex flex-row items-center justify-center space-x-2 rounded-full bg-custorange px-3 py-1 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-orange-500'
 				href='/pusat-bantuan'
@@ -21,18 +25,22 @@ const FasKes = () => {
 				<p className='font-semibold text-white'>Pusat Bantuan</p>
 			</a>
 
+			{/* Judul Fasilitas Kesehatan */}
 			<div className='flex w-[80%] flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0'>
 				<p className='text-4xl font-extrabold md:text-5xl'>Fasilitas Kesetahan</p>
 				<div className='h-2 w-full bg-gradient-to-r from-custred to-custorange md:w-auto md:flex-grow' />
 			</div>
 
+			{/* Informasi Praktek Dokter Umum Askara Medika */}
 			<div className='flex w-[80%] flex-col space-y-6'>
 				<div className='flex w-full flex-col items-center space-y-6 md:h-[15rem] md:flex-row md:space-x-6 md:space-y-0'>
+					{/* Gambar Logo Askara Medika */}
 					<img
 						src={AskaraMedika}
 						alt='Askara Medika'
 						className='max-h-[20rem] max-w-[20rem] md:h-full'
 					/>
+					{/* Embed Google Maps lokasi Askara Medika */}
 					<iframe
 						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19043.680287608982!2d115.27040019740704!3d-8.403423466085096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd219fd7b21b44f%3A0xf983a031f6ee3100!2sPraktek%20Dokter%20Umum!5e0!3m2!1sen!2sid!4v1728913976083!5m2!1sen!2sid'
 						style={{ border: 0 }}
@@ -43,6 +51,7 @@ const FasKes = () => {
 					/>
 				</div>
 
+				{/* Informasi kontak Praktek Dokter Umum Askara Medika */}
 				<div className='flex w-full flex-col space-y-2 rounded-lg bg-white px-4 py-4 shadow-md'>
 					<div className='mb-3 w-fit rounded bg-custred px-2 text-sm text-white'>
 						<p className='text-2xl font-bold'>Praktek Dokter Umum Askara Medika</p>
@@ -77,6 +86,7 @@ const FasKes = () => {
 			{/* Agar footer selalu berada di bawah */}
 			<div className='flex flex-grow' />
 
+			{/* Footer */}
 			<Footer />
 		</section>
 	);
