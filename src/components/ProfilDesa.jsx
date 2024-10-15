@@ -9,12 +9,25 @@ import strukturSekretariat from '../data/strukturSekretariat.json';
 import Leaf from '/assets/elements/Leaf.webp';
 import Greek from '/assets/elements/Greek.webp';
 import Scroll from '/assets/elements/Scroll.webp';
-import { IconUserFilled, IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
+import { IconUserFilled, IconArrowLeft, IconArrowRight, IconInfoSquareRounded } from '@tabler/icons-react';
 
 const ProfilDesa = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
 			<NavBar activePage={'Profil Desa'} />
+
+			<a
+				className='fixed bottom-8 right-8 z-40 flex flex-row items-center justify-center space-x-2 rounded-full bg-custorange px-3 py-1 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-orange-500'
+				href='/pusat-bantuan'
+			>
+				<IconInfoSquareRounded
+					size={20}
+					stroke={1.5}
+					className='text-white'
+				/>
+				<p className='font-semibold text-white'>Pusat Bantuan</p>
+			</a>
+
 			{/* Kotak judul dan subjudul */}
 			<div
 				className='relative flex min-h-48 w-[90%] flex-col justify-center space-y-1 overflow-hidden rounded-xl border px-8 py-12 text-start text-white'

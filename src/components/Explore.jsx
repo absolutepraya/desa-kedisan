@@ -9,12 +9,25 @@ import penginapan from '../data/penginapan.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Navigation } from 'swiper/modules';
-import { IconArrowBigRightLine, IconArrowBigLeftLine } from '@tabler/icons-react';
+import { IconArrowBigRightLine, IconArrowBigLeftLine, IconInfoSquareRounded } from '@tabler/icons-react';
 
 const Explore = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
 			<NavBar activePage='Explore' />
+
+			<a
+				className='fixed bottom-8 right-8 z-40 flex flex-row items-center justify-center space-x-2 rounded-full bg-custorange px-3 py-1 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-orange-500'
+				href='/pusat-bantuan'
+			>
+				<IconInfoSquareRounded
+					size={20}
+					stroke={1.5}
+					className='text-white'
+				/>
+				<p className='font-semibold text-white'>Pusat Bantuan</p>
+			</a>
+
 			<div className='flex w-[80%] flex-col space-y-2'>
 				<div className='flex w-full flex-row items-center space-x-6'>
 					<p className='text-5xl font-extrabold'>Temukan Harta Karun di Desa Kedisan</p>

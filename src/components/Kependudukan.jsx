@@ -6,12 +6,25 @@ import Kependudukan2 from '/assets/charts/Kependudukan2.webp';
 import Kependudukan3 from '/assets/charts/Kependudukan3.webp';
 import Kependudukan4 from '/assets/charts/Kependudukan4.webp';
 
-import { IconUser, IconUsers, IconBabyCarriage, IconOld, IconFriends } from '@tabler/icons-react';
+import { IconUser, IconUsers, IconBabyCarriage, IconOld, IconFriends, IconInfoSquareRounded } from '@tabler/icons-react';
 
 const Kependudukan = () => {
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
 			<NavBar activePage='Kependudukan' />
+
+			<a
+				className='fixed bottom-8 right-8 z-40 flex flex-row items-center justify-center space-x-2 rounded-full bg-custorange px-3 py-1 shadow-lg transition-all duration-200 hover:scale-110 hover:bg-orange-500'
+				href='/pusat-bantuan'
+			>
+				<IconInfoSquareRounded
+					size={20}
+					stroke={1.5}
+					className='text-white'
+				/>
+				<p className='font-semibold text-white'>Pusat Bantuan</p>
+			</a>
+
 			<div className='flex w-[80%] flex-row items-center space-x-6'>
 				<p className='text-5xl font-extrabold'>Statistika Kependudukan</p>
 				<div className='h-2 w-auto flex-grow bg-gradient-to-r from-custred to-custorange' />

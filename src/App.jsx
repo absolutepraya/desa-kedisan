@@ -4,6 +4,7 @@ import Kependudukan from './components/Kependudukan';
 import Explore from './components/Explore';
 import Sekolah from './components/Sekolah';
 import FasKes from './components/FasKes';
+import PusatBantuan from './components/PusatBantuan';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 const App = () => {
@@ -46,6 +47,10 @@ const App = () => {
 				<Route
 					path='/fasilitas-kesehatan'
 					element={<FasKes />}
+				/>
+				<Route
+					path='/pusat-bantuan'
+					element={<PusatBantuan />}
 				/>
 			</Routes>
 		</Router>
