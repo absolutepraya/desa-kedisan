@@ -8,7 +8,7 @@ const PusatBantuan = () => {
 			{/* Contoh form pusat bantuan */}
 			<div className='flex w-[80%] flex-col space-y-2'>
 				<div className='flex w-full flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0'>
-					<p className='text-5xl font-extrabold'>Pusat Bantuan Desa Kedisan</p>
+					<p className='text-4xl font-extrabold md:text-5xl'>Pusat Bantuan Desa Kedisan</p>
 					<div className='h-2 w-full bg-gradient-to-r from-custred to-custorange md:w-auto md:flex-grow' />
 				</div>
 				<p className='font-semibold'>Silakan mengisi form berikut untuk mendapatkan bantuan dari kami.</p>
