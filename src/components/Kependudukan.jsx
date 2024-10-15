@@ -31,38 +31,38 @@ const Kependudukan = () => {
 			</div>
 
 			<div className='flex w-[80%] flex-col items-center'>
-				<div className='w-fit rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl'>
-					<p className='text-xl font-bold text-white'>Jumlah Penduduk Menurut Kelompok Umur</p>
+				<div className='w-3/4 rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl md:w-fit'>
+					<p className='font-bold text-white md:text-xl'>Jumlah Penduduk Menurut Kelompok Umur</p>
 				</div>
 				<div className='flex w-full flex-col items-center space-y-8 overflow-hidden rounded-xl bg-white pt-8'>
-					<div className='flex w-[80%] justify-around rounded-lg bg-gray-200 px-4 py-4 shadow-md'>
+					<div className='flex w-[80%] flex-col rounded-lg bg-gray-200 px-4 py-4 text-sm shadow-md md:flex-row md:justify-around md:text-lg'>
 						<div className='flex items-center space-x-2'>
 							<IconUsers
-								size={24}
 								stroke={2}
 								fill
+								className='h-4 w-4 md:h-5 md:w-5'
 							/>
-							<p className='text-lg'>
+							<p>
 								<b>Jumlah Jiwa:</b> 5.868
 							</p>
 						</div>
 						<div className='flex items-center space-x-2'>
 							<IconUser
-								size={24}
 								stroke={2}
 								fill
+								className='h-4 w-4 md:h-5 md:w-5'
 							/>
-							<p className='text-lg'>
+							<p>
 								<b>Jumlah Kepala Keluarga:</b> 1.279
 							</p>
 						</div>
 						<div className='flex items-center space-x-2'>
 							<IconUsers
-								size={24}
 								stroke={2}
 								fill
+								className='h-4 w-4 md:h-5 md:w-5'
 							/>
-							<p className='text-lg'>
+							<p>
 								<b>Jumlah PUS:</b> 1.155
 							</p>
 						</div>
@@ -76,51 +76,51 @@ const Kependudukan = () => {
 			</div>
 
 			<div className='flex w-[80%] flex-col items-center'>
-				<div className='w-fit rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl'>
-					<p className='text-xl font-bold text-white'>Persentase Partisipasi Keluarga dalam Poktan (Kelompok Kegiatan)</p>
+				<div className='w-3/4 rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl md:w-fit'>
+					<p className='font-bold text-white md:text-xl'>Persentase Partisipasi Keluarga dalam Poktan (Kelompok Kegiatan)</p>
 				</div>
 				<div className='flex w-full flex-col items-center space-y-8 overflow-hidden rounded-xl bg-white pt-8'>
-					<div className='flex w-[80%] flex-row justify-around rounded-lg bg-gray-200 px-4 py-4 shadow-md'>
+					<div className='flex w-[80%] flex-col justify-around rounded-lg bg-gray-200 px-4 py-4 text-sm shadow-md md:flex-row md:text-lg'>
 						<div className='flex flex-col justify-around'>
 							<div className='flex items-center space-x-2'>
 								<IconBabyCarriage
-									size={24}
 									stroke={2}
 									fill
+									className='h-4 w-4 md:h-5 md:w-5'
 								/>
-								<p className='text-lg leading-6'>
-									<b>Keluarga yang Memiliki Balita:</b> 253
+								<p>
+									<b>Keluarga Memiliki Balita:</b> 253
 								</p>
 							</div>
 							<div className='flex items-center space-x-2'>
 								<IconFriends
-									size={24}
 									stroke={2}
 									fill
+									className='h-4 w-4 md:h-5 md:w-5'
 								/>
-								<p className='text-lg'>
-									<b>Keluarga yang Memiliki Remaja:</b> 85
+								<p>
+									<b>Keluarga Memiliki Remaja:</b> 85
 								</p>
 							</div>
 						</div>
 						<div className='flex flex-col'>
 							<div className='flex items-center space-x-2'>
 								<IconOld
-									size={24}
 									stroke={2}
 									fill
+									className='h-4 w-4 md:h-5 md:w-5'
 								/>
-								<p className='text-lg'>
-									<b>Keluarga yang Memiliki Lansia:</b> 200
+								<p>
+									<b>Keluarga Memiliki Lansia:</b> 200
 								</p>
 							</div>
 							<div className='flex items-center space-x-2'>
 								<IconUser
-									size={24}
 									stroke={2}
 									fill
+									className='h-4 w-4 md:h-5 md:w-5'
 								/>
-								<p className='text-lg'>
+								<p>
 									<b>Jumlah Remaja:</b> 718
 								</p>
 							</div>
@@ -134,10 +134,10 @@ const Kependudukan = () => {
 				</div>
 			</div>
 
-			<div className='flex w-[80%] flex-row space-x-6'>
-				<div className='flex w-1/2 flex-col items-center'>
+			<div className='flex w-[80%] flex-col space-y-10 md:flex-row md:space-x-6'>
+				<div className='flex flex-col items-center md:w-1/2'>
 					<div className='w-fit rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl'>
-						<p className='text-xl font-bold text-white'>PUS dan Kepesertaan Ber-KB</p>
+						<p className='font-bold text-white md:text-xl'>PUS dan Kepesertaan Ber-KB</p>
 					</div>
 					<div className='flex w-full flex-col items-center space-y-8 overflow-hidden rounded-xl bg-white pt-8'>
 						<div className='flex w-[80%] justify-around rounded-lg bg-gray-200 px-4 py-4 shadow-md'>
@@ -159,9 +159,9 @@ const Kependudukan = () => {
 						/>
 					</div>
 				</div>
-				<div className='flex w-1/2 flex-col items-center'>
+				<div className='flex flex-col items-center md:w-1/2'>
 					<div className='w-fit rounded-t-xl bg-gradient-to-br from-custred to-custorange px-8 py-2 shadow-xl'>
-						<p className='text-xl font-bold text-white'>PUS dan ketidaksertaan Ber-KB</p>
+						<p className='font-bold text-white md:text-xl'>PUS dan ketidaksertaan Ber-KB</p>
 					</div>
 					<div className='flex w-full flex-col items-center space-y-8 overflow-hidden rounded-xl bg-white pt-8'>
 						<div className='flex w-[80%] justify-around rounded-lg bg-gray-200 px-4 py-4 shadow-md'>

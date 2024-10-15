@@ -57,7 +57,7 @@ const Galeri = () => {
 				<div className='h-2 w-auto flex-grow bg-gradient-to-r from-custred to-custorange' />
 			</div>
 
-			<div className='grid w-[80%] grid-cols-2 gap-6'>
+			<div className='grid w-[80%] grid-cols-1 gap-4 md:grid-cols-2 md:gap-6'>
 				{images.map((image, index) => (
 					<div
 						key={index}
@@ -66,10 +66,10 @@ const Galeri = () => {
 						<img
 							src={image.src}
 							alt={`Galeri ${image.name}`}
-							className='h-96 w-full rounded-lg object-cover'
+							className='aspect-square w-full rounded-lg object-cover md:h-96'
 						/>
-						<div className='rounded-b-lg bg-custred px-4 py-2'>
-							<p className='text-lg font-bold text-white'>{image.name}</p>
+						<div className='max-w-[70%] rounded-b-lg bg-custred px-2 py-1 md:px-4 md:py-2'>
+							<p className='text-sm font-medium text-white md:text-lg'>{image.name}</p>
 						</div>
 					</div>
 				))}

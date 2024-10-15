@@ -45,12 +45,12 @@ const Explore = () => {
 				<img
 					src={Island}
 					alt='Island'
-					className='absolute -bottom-4 -left-8 h-36 w-36 -rotate-12'
+					className='absolute -bottom-4 -left-8 z-40 h-16 w-16 -rotate-12 md:h-36 md:w-36'
 				/>
 				<img
 					src={Pin}
 					alt='Pin'
-					className='absolute -right-4 -top-8 h-24 w-24'
+					className='absolute -right-4 -top-8 z-40 h-12 w-12 md:h-24 md:w-24'
 				/>
 				<Swiper
 					modules={[Navigation]}
@@ -67,7 +67,7 @@ const Explore = () => {
 					{destinasiWisata.map((destination, index) => (
 						<SwiperSlide key={index}>
 							<div className='flex w-auto flex-col items-center justify-center space-y-4 text-white'>
-								<div className='h-[30rem] w-[80%] rounded-xl bg-white'>
+								<div className='aspect-video w-full rounded-xl bg-white md:w-[80%]'>
 									<img
 										src={destination.image}
 										alt={`Destinasi Wisata ${destination.name}`}
@@ -82,13 +82,13 @@ const Explore = () => {
 							</div>
 						</SwiperSlide>
 					))}
-					<div className='swiper-prev absolute bottom-1/2 left-0 z-10 flex h-24 w-16 translate-y-1/2 items-center justify-center rounded bg-custred text-white'>
-						<IconArrowBigLeftLine size={30} />
-					</div>
-					<div className='swiper-next absolute bottom-1/2 right-0 z-10 flex h-24 w-16 translate-y-1/2 items-center justify-center rounded bg-custred text-white'>
-						<IconArrowBigRightLine size={30} />
-					</div>
 				</Swiper>
+				<div className='swiper-prev absolute left-0 top-[20%] z-10 flex items-center justify-center rounded-r bg-custred px-1 py-6 text-white md:bottom-1/2 md:translate-y-1/2 md:px-4 md:py-12'>
+					<IconArrowBigLeftLine size={30} />
+				</div>
+				<div className='swiper-next absolute right-0 top-[20%] z-10 flex items-center justify-center rounded-l bg-custred px-1 py-6 text-white md:bottom-1/2 md:translate-y-1/2 md:px-4 md:py-12'>
+					<IconArrowBigRightLine size={30} />
+				</div>
 			</div>
 
 			<div className='flex w-full flex-col items-center space-y-2'>
@@ -96,7 +96,7 @@ const Explore = () => {
 				<div className='h-1 w-[80%] bg-custred' />
 			</div>
 
-			<div className='grid w-[80%] grid-cols-2 gap-6'>
+			<div className='grid w-[80%] grid-cols-2 gap-4 md:gap-6'>
 				{usahaLokal.map((localBusiness, index) => (
 					<div
 						key={index}
@@ -105,7 +105,7 @@ const Explore = () => {
 						<img
 							src={localBusiness.image}
 							alt={`Usaha Lokal ${localBusiness.name}`}
-							className='h-96 w-full rounded-lg object-cover transition-all duration-200 hover:rotate-1'
+							className='aspect-square w-full rounded-lg object-cover transition-all duration-200 hover:rotate-1 md:h-96'
 						/>
 						<div className='flex flex-col space-y-1'>
 							<p className='text-lg font-bold'>{localBusiness.name}</p>
@@ -120,7 +120,7 @@ const Explore = () => {
 				<div className='h-1 w-[80%] bg-custred' />
 			</div>
 
-			<div className='grid w-[80%] grid-cols-2 gap-6'>
+			<div className='grid w-[80%] grid-cols-2 gap-4 md:gap-6'>
 				{makanan.map((food, index) => (
 					<div
 						key={index}
@@ -129,7 +129,7 @@ const Explore = () => {
 						<img
 							src={food.image}
 							alt={`Makanan ${food.name}`}
-							className='h-96 w-full rounded-lg object-cover transition-all duration-200 hover:rotate-1'
+							className='aspect-square w-full rounded-lg object-cover transition-all duration-200 hover:rotate-1 md:h-96'
 						/>
 						<div className='flex flex-col space-y-1'>
 							<p className='text-lg font-bold'>{food.name}</p>
@@ -144,7 +144,7 @@ const Explore = () => {
 				<div className='h-1 w-[80%] bg-custred' />
 			</div>
 
-			<div className='grid w-[80%] grid-cols-2 gap-6'>
+			<div className='grid w-[80%] grid-cols-2 gap-4 md:gap-6'>
 				{penginapan.map((accommodation, index) => (
 					<div
 						key={index}
@@ -153,7 +153,7 @@ const Explore = () => {
 						<img
 							src={accommodation.image}
 							alt={`Penginapan ${accommodation.name}`}
-							className='h-96 w-full rounded-lg object-cover transition-all duration-200 hover:rotate-1'
+							className='aspect-square w-full rounded-lg object-cover transition-all duration-200 hover:rotate-1 md:h-96'
 						/>
 						<div className='flex flex-col space-y-1'>
 							<p className='text-lg font-bold'>{accommodation.name}</p>

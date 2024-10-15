@@ -35,8 +35,8 @@ const Sekolah = () => {
 					className='h-auto w-full rounded-xl'
 				/>
 
-				<div className='flex w-full rounded-lg bg-gray-200 px-16 py-8 shadow-md'>
-					<div className='grid w-full grid-cols-2 gap-8'>
+				<div className='flex w-full rounded-lg bg-gray-200 md:px-16 px-6 py-8 shadow-md'>
+					<div className='grid w-full md:grid-cols-2 grid-cols-1 gap-8'>
 						{sekolah.map((school, index) => (
 							<div
 								key={index}

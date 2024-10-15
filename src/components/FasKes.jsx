@@ -27,11 +27,11 @@ const FasKes = () => {
 			</div>
 
 			<div className='flex w-[80%] flex-col space-y-6'>
-				<div className='flex h-[15rem] w-full flex-row space-x-6'>
+				<div className='flex w-full flex-col items-center space-y-6 md:h-[15rem] md:flex-row md:space-x-6 md:space-y-0'>
 					<img
 						src={AskaraMedika}
 						alt='Askara Medika'
-						className='h-full'
+						className='max-h-[20rem] max-w-[20rem] md:h-full'
 					/>
 					<iframe
 						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19043.680287608982!2d115.27040019740704!3d-8.403423466085096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd219fd7b21b44f%3A0xf983a031f6ee3100!2sPraktek%20Dokter%20Umum!5e0!3m2!1sen!2sid!4v1728913976083!5m2!1sen!2sid'
@@ -39,7 +39,7 @@ const FasKes = () => {
 						allowFullScreen=''
 						loading='lazy'
 						referrerPolicy='no-referrer-when-downgrade'
-						className='h-full w-full rounded-xl'
+						className='h-[40rem] w-full rounded-xl md:h-full'
 					/>
 				</div>
 
@@ -51,6 +51,7 @@ const FasKes = () => {
 						<IconMap2
 							size={20}
 							stroke={2}
+							className='flex-shrink-0'
 						/>
 						<p>Jalan Raya Pujung Kaja-Kedisan, Sebatu, Tegallalang, Gianyar, Bali 80561</p>
 					</div>
@@ -58,6 +59,7 @@ const FasKes = () => {
 						<IconPhone
 							size={20}
 							stroke={2}
+							className='flex-shrink-0'
 						/>
 						<p>082 146 788 938</p>
 					</div>
@@ -65,6 +67,7 @@ const FasKes = () => {
 						<IconMail
 							size={20}
 							stroke={2}
+							className='flex-shrink-0'
 						/>
 						<p>askaramedika@gmail.com</p>
 					</div>

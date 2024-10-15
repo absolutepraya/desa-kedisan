@@ -10,8 +10,28 @@ import Leaf from '/assets/elements/Leaf.webp';
 import Greek from '/assets/elements/Greek.webp';
 import Scroll from '/assets/elements/Scroll.webp';
 import { IconUserFilled, IconArrowLeft, IconArrowRight, IconInfoSquareRounded } from '@tabler/icons-react';
+import { useEffect, useState } from 'react';
 
 const ProfilDesa = () => {
+	const [slidesPerView, setSlidesPerView] = useState(5);
+
+	const getMobileView = () => {
+		return window.innerWidth <= 1024; // Adjust the width as per your requirement
+	};
+
+	useEffect(() => {
+		const handleResize = () => {
+			setSlidesPerView(getMobileView() ? 1 : 5);
+		};
+
+		handleResize(); // Set initial value
+		window.addEventListener('resize', handleResize);
+
+		return () => {
+			window.removeEventListener('resize', handleResize);
+		};
+	}, []);
+
 	return (
 		<section className='relative flex min-h-screen w-full flex-col items-center space-y-10 overflow-hidden bg-gray-100 pt-20 font-inter'>
 			<NavBar activePage={'Profil Desa'} />
@@ -50,8 +70,8 @@ const ProfilDesa = () => {
 				<div className='h-1 w-[80%] bg-custred' />
 			</div>
 
-			<div className='flex max-w-[80%] flex-row space-x-4 rounded-xl'>
-				<div className='relative flex max-w-[50%] flex-col space-y-4 rounded-xl border bg-white px-6 py-6 shadow-xl'>
+			<div className='flex max-w-[80%] flex-col space-y-4 rounded-xl md:flex-row md:space-x-4'>
+				<div className='relative flex w-full flex-col space-y-4 rounded-xl border bg-white px-6 py-6 shadow-xl md:w-[50%]'>
 					<img
 						src={Leaf}
 						alt='Leaf'
@@ -60,7 +80,7 @@ const ProfilDesa = () => {
 					<p className='text-center text-2xl font-bold'>Desa Kedisan</p>
 					<p className='text-justify'>Desa Kedisan adalah tujuan wisata menawan yang terkenal dengan sawah bertingkatnya yang menakjubkan, warisan budaya yang kaya, dan masyarakatnya yang ramah. Di sini, Anda dapat menikmati keindahan alam yang tenang, menjelajahi pasar tradisional, dan menikmati kesenian dan kerajinan lokal yang unik. Keramahan penduduk desa yang hangat akan membuat kunjungan Anda menjadi pengalaman yang tak terlupakan. Perpaduan antara pemandangan yang indah dan kekayaan budaya menjadikan Desa Kedisan sebagai destinasi yang unik dan menarik.</p>
 				</div>
-				<div className='flex flex-grow overflow-hidden rounded-xl shadow-xl'>
+				<div className='flex h-64 flex-grow overflow-hidden rounded-xl shadow-xl md:h-auto'>
 					<iframe
 						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15792.69396604829!2d115.36344219824558!3d-8.285526134139438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1f5d7449f114b%3A0x8e5f99b9dae1de9c!2sKedisan%2C%20Kintamani%2C%20Bangli%20Regency%2C%20Bali!5e0!3m2!1sen!2sid!4v1728914166297!5m2!1sen!2sid'
 						width='100%'
@@ -109,8 +129,10 @@ const ProfilDesa = () => {
 
 			<div className='flex w-[80%] flex-col space-y-5'>
 				<div className='flex w-full flex-row overflow-hidden rounded-xl bg-white shadow-xl'>
-					<div className='flex w-[20%] items-center justify-center bg-gradient-to-br from-custred to-custorange text-3xl font-extrabold tracking-widest text-white'>Visi</div>
-					<div className='flex flex-col px-12 py-6'>
+					<div className='flex w-[20%] items-center justify-center bg-gradient-to-br from-custred to-custorange text-3xl font-extrabold tracking-widest text-white md:px-4'>
+						<p className='-rotate-90 md:rotate-0'>Visi</p>
+					</div>
+					<div className='flex flex-col px-6 py-6 md:px-12'>
 						<p>Kadisan Berseri:</p>
 						<li>Terwujudnya Masyarakat Desa Kedisan yang Bersih</li>
 						<li>Terwujudnya Masyarakat Desa Kedisan yang Sejahtera</li>
@@ -118,13 +140,15 @@ const ProfilDesa = () => {
 					</div>
 				</div>
 				<div className='flex w-full flex-row justify-between overflow-hidden rounded-xl bg-white shadow-xl'>
-					<div className='flex flex-col px-12 py-6'>
+					<div className='flex flex-col px-6 py-6 md:px-12'>
 						<li>Membangun sumber daya manusia yang berkualitas.</li>
 						<li>Menumbuhkan kemandirian dan kewirausahaan masyarakat melalui pemberdayaan potensi desa.</li>
 						<li>Menjaga lingkungan yang bersih dan hijau.</li>
 						<li>Pemerataan pembangunan di segala bidang.</li>
 					</div>
-					<div className='flex w-[20%] items-center justify-center bg-gradient-to-br from-custred to-custorange text-3xl font-extrabold tracking-widest text-white'>Misi</div>
+					<div className='flex w-[20%] items-center justify-center bg-gradient-to-br from-custred to-custorange text-3xl font-extrabold tracking-widest text-white md:px-4'>
+						<p className='rotate-90 md:rotate-0'>Misi</p>
+					</div>
 				</div>
 			</div>
 
@@ -145,7 +169,7 @@ const ProfilDesa = () => {
 				<Swiper
 					modules={[Navigation]}
 					className='relative w-full'
-					slidesPerView={5}
+					slidesPerView={slidesPerView}
 					spaceBetween={20}
 					centeredSlides={true}
 					centeredSlidesBounds={true}
@@ -167,10 +191,10 @@ const ProfilDesa = () => {
 							</div>
 						</SwiperSlide>
 					))}
-					<div className='swiper-prev absolute bottom-1/2 left-0 z-10 flex h-10 w-10 translate-y-1/2 items-center justify-center rounded bg-custred text-white'>
+					<div className='swiper-prev absolute bottom-1/2 left-0 z-10 flex h-10 w-10 translate-y-1/2 items-center justify-center rounded bg-custred text-white shadow-lg'>
 						<IconArrowLeft />
 					</div>
-					<div className='swiper-next absolute bottom-1/2 right-0 z-10 flex h-10 w-10 translate-y-1/2 items-center justify-center rounded bg-custred text-white'>
+					<div className='swiper-next absolute bottom-1/2 right-0 z-10 flex h-10 w-10 translate-y-1/2 items-center justify-center rounded bg-custred text-white shadow-lg'>
 						<IconArrowRight />
 					</div>
 				</Swiper>
@@ -183,25 +207,28 @@ const ProfilDesa = () => {
 					</div>
 				</div>
 
-				<div className='grid grid-cols-2 gap-x-4 gap-y-4'>
+				<div className='grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2'>
 					{Object.entries(strukturSekretariat.Dinas_Sekretariat).map(([key, value]) => (
 						<div
 							key={key}
-							className='flex h-80 w-[28rem] flex-row items-center justify-center space-x-4 rounded-xl border bg-white'
+							className='flex flex-col items-center justify-center space-y-4 rounded-xl border bg-white px-8 py-8 md:h-[22rem] md:w-[28rem] md:px-0 md:py-0'
 						>
-							<div className='flex h-64 w-48 flex-col items-center space-y-3 pt-3'>
-								<PersonIcon />
-								<div className='flex w-full flex-grow flex-col items-center justify-center space-y-0 rounded-xl bg-custred px-2 text-white'>
-									<p className='text-center text-sm font-bold'>{value.Kepala}</p>
-									<p className='text-center text-xs'>Kepala</p>
+							<p className='text-2xl font-bold'>{key.replace(/_/g, ' ')}</p>
+							<div className='flex w-full flex-col items-center justify-center space-y-4 md:flex-row md:space-x-4'>
+								<div className='flex h-64 w-48 flex-col items-center space-y-3 pt-3'>
+									<PersonIcon />
+									<div className='flex w-full flex-grow flex-col items-center justify-center space-y-0 rounded-xl bg-custred px-2 text-white'>
+										<p className='text-center text-sm font-bold'>{value.Kepala}</p>
+										<p className='text-center text-xs'>Kepala</p>
+									</div>
 								</div>
-							</div>
-							<div className='flex h-64 w-48 flex-col items-center space-y-3 pt-3'>
-								<PersonIcon />
+								<div className='flex h-64 w-48 flex-col items-center space-y-3 pt-3'>
+									<PersonIcon />
 
-								<div className='flex w-full flex-grow flex-col items-center justify-center space-y-0 rounded-xl bg-custred px-2 text-white'>
-									<p className='text-center text-sm font-bold'>{value.Staff}</p>
-									<p className='text-center text-xs'>Staff</p>
+									<div className='flex w-full flex-grow flex-col items-center justify-center space-y-0 rounded-xl bg-custred px-2 text-white'>
+										<p className='text-center text-sm font-bold'>{value.Staff}</p>
+										<p className='text-center text-xs'>Staff</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -220,7 +247,7 @@ const ProfilDesa = () => {
 const PersonIcon = () => (
 	<div className='flex aspect-square w-[85%] items-center justify-center overflow-hidden rounded-full bg-gray-400'>
 		<IconUserFilled
-			size={120}
+			size='70%'
 			className='text-gray-200'
 		/>
 	</div>

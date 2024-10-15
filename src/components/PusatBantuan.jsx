@@ -14,7 +14,7 @@ const PusatBantuan = () => {
 				</div>
 				<p className='font-semibold'>Silakan mengisi form berikut untuk mendapatkan bantuan dari kami.</p>
 			</div>
-			<div className='flex w-[40rem] flex-col space-y-3'>
+			<div className='flex max-w-[40rem] w-[80%] flex-col space-y-3'>
 				<div className='flex w-full flex-col space-y-2'>
 					<label className='text-lg font-semibold'>Nama Lengkap</label>
 					<input
