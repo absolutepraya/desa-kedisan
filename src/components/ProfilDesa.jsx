@@ -104,12 +104,12 @@ const ProfilDesa = () => {
 				<img
 					src={Greek}
 					alt='Greek'
-					className='absolute -right-4 -top-4 h-16 w-16 -rotate-12'
+					className='absolute -right-4 -top-4 h-10 w-10 -rotate-12 md:h-16 md:w-16'
 				/>
 				<img
 					src={Scroll}
 					alt='Scroll'
-					className='absolute -bottom-4 -left-4 h-16 rotate-6'
+					className='absolute -bottom-4 -left-4 h-10 w-10 rotate-6 md:h-16 md:w-16'
 				/>
 				<p
 					className='text-center text-2xl font-bold'
