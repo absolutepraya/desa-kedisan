@@ -27,7 +27,7 @@ const FasKes = () => {
 
 			{/* Judul Fasilitas Kesehatan */}
 			<div className='flex w-[80%] flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0'>
-				<p className='text-4xl font-extrabold md:text-5xl'>Fasilitas Kesetahan</p>
+				<p className='text-4xl font-extrabold md:text-5xl'>Fasilitas Kesehatan</p>
 				<div className='h-2 w-full bg-gradient-to-r from-custred to-custorange md:w-auto md:flex-grow' />
 			</div>
 
