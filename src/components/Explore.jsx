@@ -29,9 +29,9 @@ const Explore = () => {
 			</a>
 
 			<div className='flex w-[80%] flex-col space-y-2'>
-				<div className='flex w-full flex-row items-center space-x-6'>
-					<p className='text-5xl font-extrabold'>Temukan Harta Karun di Desa Kedisan</p>
-					<div className='h-2 w-auto flex-grow bg-gradient-to-r from-custred to-custorange' />
+				<div className='flex w-full flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0'>
+					<p className='text-5xl font-extrabold'>Galeri Desa Kedisan</p>
+					<div className='h-2 w-full bg-gradient-to-r from-custred to-custorange md:w-auto md:flex-grow' />
 				</div>
 				<p className='font-semibold'>Jelajahi atraksi utama mulai dari tujuan wisata hingga pilihan penginapan dan adat istiadat setempat, temukan yang terbaik dari desa kami.</p>
 			</div>

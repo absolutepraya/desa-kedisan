@@ -23,9 +23,9 @@ const Sekolah = () => {
 				<p className='font-semibold text-white'>Pusat Bantuan</p>
 			</a>
 
-			<div className='flex w-[80%] flex-row items-center space-x-6'>
+			<div className='flex w-[80%] flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0'>
 				<p className='text-5xl font-extrabold'>Sekolah di Desa Kedisan</p>
-				<div className='h-2 w-auto flex-grow bg-gradient-to-r from-custred to-custorange' />
+				<div className='h-2 w-full bg-gradient-to-r from-custred to-custorange md:w-auto md:flex-grow' />
 			</div>
 
 			<div className='flex w-[80%] flex-col items-center space-y-8'>
@@ -35,8 +35,8 @@ const Sekolah = () => {
 					className='h-auto w-full rounded-xl'
 				/>
 
-				<div className='flex w-full rounded-lg bg-gray-200 md:px-16 px-6 py-8 shadow-md'>
-					<div className='grid w-full md:grid-cols-2 grid-cols-1 gap-8'>
+				<div className='flex w-full rounded-lg bg-gray-200 px-6 py-8 shadow-md md:px-16'>
+					<div className='grid w-full grid-cols-1 gap-8 md:grid-cols-2'>
 						{sekolah.map((school, index) => (
 							<div
 								key={index}

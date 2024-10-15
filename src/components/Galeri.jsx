@@ -52,9 +52,9 @@ const Galeri = () => {
 				<p className='font-semibold text-white'>Pusat Bantuan</p>
 			</a>
 
-			<div className='flex w-[80%] flex-row items-center space-x-6'>
+			<div className='flex w-[80%] flex-col items-center space-y-4 md:flex-row md:space-x-6 md:space-y-0'>
 				<p className='text-5xl font-extrabold'>Galeri Desa Kedisan</p>
-				<div className='h-2 w-auto flex-grow bg-gradient-to-r from-custred to-custorange' />
+				<div className='h-2 w-full bg-gradient-to-r from-custred to-custorange md:w-auto md:flex-grow' />
 			</div>
 
 			<div className='grid w-[80%] grid-cols-1 gap-4 md:grid-cols-2 md:gap-6'>
